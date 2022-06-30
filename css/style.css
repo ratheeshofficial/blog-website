@@ -5,22 +5,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.bg-left-half {
-  position: relative;
-}
-
-.bg-left-half:before {
-  position: absolute;
-  width: 60%;
-  height: 120%;
-  z-index: -1;
-  content: "";
-  left: 20%;
-  right: 20%;
+.sticky {
+  position: sticky;
   top: 0;
-  background-color: #f8f9fa;
 }
-
 .img-circle {
   border-radius: 50%;
   border: 2px solid #f1f1f1;
@@ -28,12 +16,7 @@ body {
 
 .link-hover:hover {
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.105) !important;
-  /*transition-delay: 0.5s;*/
   transition: all 0.8s;
-  /*transition-timing-function: linear;*/
-}
-.material-icons {
-  margin-right: 35px !important;
 }
 .rounded-circle {
   border: 1px solid #dee2e6 !important;
@@ -44,18 +27,13 @@ body {
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0.5rem;
-  padding-left: 3.5rem !important;
 }
-/*h1 { font-family: 'Roboto', sans-serif; }*/
 .fs-4-5 {
   font-size: 4.5rem;
-}
-.fs-12 {
-  font-size: 12px !important;
 }
 .ml-10px {
   margin-left: 10px;
@@ -89,39 +67,23 @@ body {
 .nav-link-ltr:hover::before {
   width: 50%;
 }
-.h-7em {
-  height: 7em;
+.h-2em {
+  height: 2em;
 }
 
 /*mobile screens*/
-@media only screen and (min-width: 600px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 0rem !important;
+@media only screen and (max-width: 600px) {
+  .nav-link-ltr:hover::before {
+    width: 10% !important;
   }
   .hovereffect img {
     display: inline-block !important;
-  }
-  .material-icons {
-    margin-left: 100px !important;
   }
   .bg-left-half:before {
     width: 80%;
     left: 10%;
   }
-  .owl-carousel.owl-drag .owl-item {
-    /*width: 100% !important;*/
-  }
-}
-
-/*Large screens*/
-@media only screen and (min-width: 1200px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    /*padding-left: 3.5rem !important;*/
-  }
-  .material-icons {
-    margin-left: 0px !important;
-  }
-  .owl-carousel.owl-drag .owl-item {
-    /*width: 366.667px !important;*/
+  .h-2em {
+    height: 3em !important;
   }
 }
