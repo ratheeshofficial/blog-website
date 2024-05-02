@@ -429,4 +429,7 @@ body {
   .h-2em {
     height: 3em !important;
   }
+  .profile-img {
+    border-radius: 50% !important;
+  }
 }
